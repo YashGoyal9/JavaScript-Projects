@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detector </title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="heading-container" data-pageHeading>
+            <h1>Dev Detective </h1>
+            <div class="theme-container">
+                <p class="btntext">DARK </p>
+                <!-- <p>LIGHT</p> -->
+                <img src="moon-icon.svg" class="btnmode">
+                <!-- <img src="sun-icon.svg" alt=""> -->
+            </div>
+        </div>
+
+        <div class="mainpart-container">
+            <form class="searchform-container" data-searchForm>
+                <!-- <img src="search-icon.svg" alt=""> css se daal di  -->
+                <input type="search" id="input" placeholder= " Enter a Github username...." data-userInput>
+                <p class="error">No Search Results </p>
+                <input type="submit" value="Search" id="search-btn">
+            </form>
+    
+            <div class="userinfo-container" data-userInfo>
+                <div class="aboutuser-container">
+                   <div class="profile-info-wrapper">
+                    <img class="avatar" data-userImage>
+                        <div class="userdesc-container" data-userDescription>
+                            <h1 class="profile-name" data-userOriginalName></h1>
+                            <a class="user-name" data-userProfileLink >  </a>
+                        </div> 
+                   </div>
+                   <p data-userJoinedDate>  </p>  
+                </div>
+                <p class="bio" data-userExperience ></p>
+             </div>
+             
+
+    
+                <div class="usercontribution-container" data-userContribution>
+                    
+                    <div>
+                        
+                    </div>
+                    <div>
+                        <div class="profile-stat">
+                            <p class="stat-title">Repos</p>
+                            <p class="repos-container stat-value"></p>
+                        </div>
+                        <div class="profile-stat">
+                            <p class="stat-title">Followers</p>
+                            <p class="followers-container stat-value"></p>
+                        </div>
+                        <div class="profile-stat">
+                            <p class="stat-title">Following</p>
+                            <p class="following-container stat-value"></p>
+                        </div> 
+                    </div>
+                     
+    
+                </div>
+    
+                <div class="userconnect-container" data-userConnect>
+                    <div class="profile-info">
+                        <img  class="bottom-icons" src="location-icon.svg" alt="">
+                        <p  class="location-container NonLink"></p>
+                    </div>
+    
+                    <div class="profile-info">
+                        <img class="bottom-icons" src="website-icon.svg" alt="">
+                        <a href="#" class="website-container links"></a>
+                    </div>
+    
+                    <div class="profile-info">
+                        <img class="bottom-icons" src="twitter-icon.svg" alt="">
+                        <a href="#" class="twitter-container links"></a>
+                    </div>
+    
+                    <div class="profile-info">
+                        <img class="bottom-icons" src="company-icon.svg" alt="">
+                        <p class="company-container NonLink"></p>
+                    </div>
+    
+                </div>
+    
+            </div>
+
+        </div>
+       
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
